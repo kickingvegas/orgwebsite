@@ -9,7 +9,8 @@
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
-* Editing
+
+* Outline/Folded Editing
   :PROPERTIES:
   :CUSTOM_ID: editing
   :END:
@@ -17,17 +18,11 @@
 #+ATTR_HTML: :id main-image
 [[file:img/structure.jpg]]
 
-Org is built on top of =outline.el=.
-
-You can easily navigate through headlines and (un)fold (sub)sections of
-your Org documents.
-
-Org enhances =outline.el= with faster keybindings and more editing
-facilities.
-
+Org is a folding outline editor. Easily show and hide sections using the =tab= key. Navigate and edit sections effortlessly with Org keyboard shortcuts.
+ 
 ** More
 
-More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][document structure]] (manual)
+More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][editing and document structure]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -45,15 +40,15 @@ More on [[https://orgmode.org/manual/Document-structure.html#Document-structure]
 #+ATTR_HTML: :id main-image
 [[file:img/planning.jpg]]
 
-Org can be used as a TODO lists manager and as a planner.
+Org is a TODO manager and a day planner.
 
-Each headline can be turned into a task.
+Turn sections into /tasks/ by adding keywords representing the state of that task. Switch states easily with the keyboard shortcut =S-<left/right>=.
 
-Switching from one TODO keyword to another is =C-c C-t= or
-=S-<left/right>=.
+See your tasks in a planner (called an /Agenda/ in Org) by adding timestamps to them. 
 
-Each item can also receive planning meta-data: scheduled and/or deadline
-cookies, tags, properties, etc.
+All done with just plain text markup. 
+
+Want a different set of keywords? No problem - Org lets you customize them to support your workflow.
 
 ** More
 
@@ -69,7 +64,7 @@ Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][date
 
 {{{updown(editing,clocking)}}}
 
-* Clocking
+* Time Tracking (Clocking)
   :PROPERTIES:
   :CUSTOM_ID: clocking
   :END:
@@ -77,16 +72,11 @@ Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][date
 #+ATTR_HTML: :id main-image
 [[file:img/clocking.jpg]]
 
-Clocking in a task is =C-c C-x C-i=.
+Keep track of the time you spend on your tasks with Org /Clocking/. 
 
-Clocking out a task is =C-c C-x C-o=.
+Org provides easy keyboard shortcuts to /clock in/ and /clock out/ of tasks. 
 
-You can use =I= and =O= from an agenda buffer.
-
-Clocking logs are stored in a drawer.
-
-Org makes it easy to clock in and out and to produce nice reports, which
-you can customize to suit the needs of your hairy boss.
+At end of the day, easily generate reports of how you spent your time.
 
 ** More
 
@@ -100,7 +90,7 @@ More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time]
 
 {{{updown(planning,agendas)}}}
 
-* Agendas
+* Planning with Agenda Views
   :PROPERTIES:
   :CUSTOM_ID: agendas
   :END:
@@ -108,18 +98,14 @@ More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time]
 #+ATTR_HTML: :id main-image
 [[file:img/agenda.jpg]]
 
-Even with large =.org= files and thousands of tasks, it is easy to focus on
-what you need to do for each context.
+Plan your tasks with /agenda views/ in Org. 
 
-The built-in agenda views display the scheduled and deadline task for the
-week, TODO lists and stuck projects.
+/Agenda views/ are reports generated from your set of tasks. 
 
-The notion of /agenda view/ can be customized to display what you need: a
-view for the day/month, restricted to a set of TODO keywords, using
-specific tag, etc.
+/Agenda views/ let you see your tasks on a daily, weekly, and monthly basis with /highly/ configurable editing. 
 
-This is one of the key aspect of Org: you can adapt Org to your workflow
-while stabilizing it.
+Plan your day your way with Org.
+
 
 ** More
 
@@ -142,6 +128,9 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 #+ATTR_HTML: :id main-image
 [[file:img/capture.jpg]]
+
+
+
 
 Adding TODO items to your =.org= files is called /capturing/.
 
