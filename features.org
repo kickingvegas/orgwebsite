@@ -18,7 +18,11 @@
 #+ATTR_HTML: :id main-image
 [[file:img/structure.jpg]]
 
-Org is a folding outline editor. Easily show and hide sections using the =tab= key. Navigate and edit sections effortlessly with Org keyboard shortcuts.
+*Org is a folding outline editor.*
+
+Easily show and hide sections using the =tab= key. 
+
+Navigate and edit sections effortlessly with Org keyboard shortcuts.
  
 ** More
 
@@ -30,17 +34,18 @@ More on [[https://orgmode.org/manual/Document-structure.html#Document-structure]
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(editing,planning)}}}
+{{{updown(mobile,todo)}}}
 
-* Planning
+
+* Todo List Management
   :PROPERTIES:
-  :CUSTOM_ID: planning
+  :CUSTOM_ID: todo
   :END:
 
 #+ATTR_HTML: :id main-image
 [[file:img/planning.jpg]]
 
-Org is a TODO manager and a day planner.
+*Org is a TODO list manager.*
 
 Turn sections into /tasks/ by adding keywords representing the state of that task. Switch states easily with the keyboard shortcut =S-<left/right>=.
 
@@ -48,7 +53,7 @@ See your tasks in a planner (called an /Agenda/ in Org) by adding timestamps to 
 
 All done with just plain text markup. 
 
-Want a different set of keywords? No problem - Org lets you customize them to support your workflow.
+Want a different set of keywords to track your task? No problem - Org lets you customize them to support your workflow.
 
 ** More
 
@@ -62,50 +67,21 @@ Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][date
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(editing,clocking)}}}
-
-* Time Tracking (Clocking)
-  :PROPERTIES:
-  :CUSTOM_ID: clocking
-  :END:
-
-#+ATTR_HTML: :id main-image
-[[file:img/clocking.jpg]]
-
-Keep track of the time you spend on your tasks with Org /Clocking/. 
-
-Org provides easy keyboard shortcuts to /clock in/ and /clock out/ of tasks. 
-
-At end of the day, easily generate reports of how you spent your time.
-
-** More
-
-More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(planning,agendas)}}}
+{{{updown(editing,planning)}}}
 
 * Planning with Agenda Views
   :PROPERTIES:
-  :CUSTOM_ID: agendas
+  :CUSTOM_ID: planning
   :END:
 
 #+ATTR_HTML: :id main-image
 [[file:img/agenda.jpg]]
 
-Plan your tasks with /agenda views/ in Org. 
+*Org is a day planner.*
 
-/Agenda views/ are reports generated from your set of tasks. 
+With /agenda views/, you can see your timestamped tasks on a daily, weekly, and monthly basis with /highly/ configurable filtering.
 
-/Agenda views/ let you see your tasks on a daily, weekly, and monthly basis with /highly/ configurable editing. 
-
-Plan your day your way with Org.
-
+Plan your projects with /agenda views/ in Org. 
 
 ** More
 
@@ -119,38 +95,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(clocking,capturing)}}}
-
-* Capturing
-  :PROPERTIES:
-  :CUSTOM_ID: capturing
-  :END:
-
-#+ATTR_HTML: :id main-image
-[[file:img/capture.jpg]]
-
-
-
-
-Adding TODO items to your =.org= files is called /capturing/.
-
-You can capture from everywhere, both within Emacs and from other
-applications like your web browser, pdf viewer, etc.
-
-Capture templates allow you to tell what information you want to capture
-from various contexts (the file name, the current date, the region, etc.)
-
-** More
-
-More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(agendas,tables)}}}
+{{{updown(todo,tables)}}}
 
 * Tables
   :PROPERTIES:
@@ -161,6 +106,8 @@ More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
 [[file:img/table2.jpg]]
 
 Org is a great plain-text table editor.
+
+Navigate between cells using the =tab= key. Press the =enter= key to enter a value. Move rows and columns with easy keyboard shortcuts. /Never/ have to reformat a table layout because of different cell value widths. 
 
 You can import tables from =.csv= and =.tsv= files, or directly from the
 current buffer; you can then export them in all the formats supported by
@@ -186,20 +133,25 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(capturing,exporting)}}}
+{{{updown(planning,publishing)}}}
 
-* Exporting
+* Publishing
   :PROPERTIES:
-  :CUSTOM_ID: exporting
+  :CUSTOM_ID: publishing
   :END:
 
 #+ATTR_HTML: :id main-image
 [[file:img/export.jpg]]
 
-Org is an authoring and publication tool.
+*Org is an authoring and publication tool.* 
 
-You can use intuitive markup then have it converted to =HTML=, $\LaTeX{}$,
-=ODT= -- and much more.
+Org doesn't have to be used for TODO list management and dayplanning. 
+
+Use the intutive Org markup syntax to create source documents that can exported into many different formats including:
+- =HTML=
+- $\LaTeX{}$
+- =ODT=
+- and much more!
 
 Developers can easily create new backends for their favorite format (see
 the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
@@ -225,21 +177,21 @@ More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (m
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(tables,babel)}}}
+{{{updown(tables,live code)}}}
 
-* Working with source code
+* Live Code and Visualization
   :PROPERTIES:
-  :CUSTOM_ID: babel
+  :CUSTOM_ID: live code
   :END:
 
 #+ATTR_HTML: :id main-image
 [[file:img/babel.jpg]]
 
-Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
+*Org can syntax highlight and /execute/ live code right inside your Org text.*
 
-You can insert code snippets, have them fontified in the Org buffer,
-compute the results in-file and tangle your Org file to get a code source
-file.
+Write code right in your Org file, execute it and see its result right in that /same/ Org file. [[https://orgmode.org/worg/org-contrib/babel/languages.html][Many languages supported]], among them Python, Javascript, Graphviz Dot, PlantUML, Shell commands, and Elisp. 
+
+Students of Computer Science might ask, "hey does Org support [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]]?" Oh yes, Org does support it. 
 
 ** More
 
@@ -253,7 +205,61 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(exporting,mobile)}}}
+{{{updown(publishing,time tracking)}}}
+
+* Time Tracking (Clocking)
+  :PROPERTIES:
+  :CUSTOM_ID: time tracking
+  :END:
+
+#+ATTR_HTML: :id main-image
+[[file:img/clocking.jpg]]
+
+Keep track of the time you spend on your tasks with Org /Clocking/. 
+
+Org provides easy keyboard shortcuts to /clock in/ and /clock out/ of tasks. 
+
+At end of the day, easily generate reports of how you spent your time.
+
+** More
+
+More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
+
+** Move
+   :PROPERTIES:
+   :CUSTOM_ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(live code,capturing)}}}
+
+* Capturing
+  :PROPERTIES:
+  :CUSTOM_ID: capturing
+  :END:
+
+#+ATTR_HTML: :id main-image
+[[file:img/capture.jpg]]
+
+Adding TODO items to your =.org= files is called /capturing/.
+
+You can capture from everywhere, both within Emacs and from other
+applications like your web browser, pdf viewer, etc.
+
+Capture templates allow you to tell what information you want to capture
+from various contexts (the file name, the current date, the region, etc.)
+
+** More
+
+More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
+
+** Move
+   :PROPERTIES:
+   :CUSTOM_ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(time tracking,mobile)}}}
 
 * With your mobile phone
   :PROPERTIES:
@@ -277,4 +283,4 @@ iPod Touch for storing, searching, viewing and editing your Org files.
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(babel,mobile)}}}
+{{{updown(mobile,editing)}}}
